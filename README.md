@@ -9,7 +9,7 @@ You're right...I need to provide some context!! :)
 
 Imagine to have a vWAN-based connectivity ecosystem: 
 
-- One or more Secured vHUBs (in same or different regions)
+- One or more Secured (or non-secured) vHUBs - in same or different regions
 - Several spoke VNETs linked to the vHUBs
 - Spoke VNETs hosting VMs/Services which can be logically split in different groups (i.e. different departments, prod/non-prod,etc..) - Like RED/BLUE in our example
 
