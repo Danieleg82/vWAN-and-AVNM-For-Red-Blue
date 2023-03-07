@@ -15,7 +15,7 @@ Imagine to have a vWAN-based connectivity ecosystem:
 
 Let's now say that our connectivity goal is the following:
 
-=DIAGR1=
+![](Diag1.jpg)
 
 - RED spokes must be able to communicate to other RED spokes linked to the same, or different, vHUBs, and **the communication must bypass any central Firewall**
 - BLUE spokes must be able to communicate to other BLUE spokes linked to the same, or different, vHUBs, **the communication must bypass any central Firewall**
@@ -35,7 +35,7 @@ https://www.youtube.com/watch?v=m-GmkMFZ5WA
 
 Now, all the very well known publicly documented solutions for similar scenarios make use of a common vWAN instrument, the so called ***custom route tables***, with all the linked concepts of "RT association", "RT propagation", "Labels", etc...
 
-***custom route tables*** (and all relevant custom routing concepts) in vWAN are a powerful instrument, and for sure something really valuable, but at the same time characterized by an elevated degree of complexity, especially when your environment expands.
+***Custom route tables*** (and all relevant custom routing concepts) in vWAN are a powerful instrument, and for sure something really valuable, but at the same time characterized by an elevated degree of complexity, especially when your environment expands.
 
 So I asked myself..."Is Azure offering any possible alternative way to reach a similar result, with a lower degree of complexity"?
 
@@ -82,7 +82,7 @@ Those *peerings* will be "hidden" (not directly visible from the VNET peering bl
 
 The final result of grouping VNETs will be like in the following diagram:
 
-=Diag2=
+![](Diag2.jpg)
 
 What is the resulting connectivity model we achieved after this configuration?
 Here it is:
@@ -98,7 +98,7 @@ In such case, you could leverage again the concept of **SECURITY ADMIN RULES** o
 
 The link provided above gives you clear info about what these are, but to make it simple you can look at *Security Admin Rules* like at a sort of "Macro-NSG" applied to the context of you group of VNETs, evaluated with higher priority than any NSG deployed into the VNETs themselves.
 
-=SecAdminRules=
+![](SecAdminRules.jpg)
 
 With this feature, you could potentally easily prevent traffic from REDs to BLUEs by creating the relevant security rules for blocking traffic to cross-scopes.
 
