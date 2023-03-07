@@ -37,7 +37,7 @@ Now, all the very well known publicly documented solutions for similar scenarios
 
 ***Custom route tables*** (and all relevant custom routing concepts) in vWAN are a powerful instrument, and for sure something really valuable, but at the same time characterized by an elevated degree of complexity, especially when your environment expands.
 
-So I asked myself..."Is Azure offering any possible alternative way to reach a similar result, with a lower degree of complexity"?
+So I asked myself...*"Is Azure offering any possible alternative way to reach a similar result, with a lower degree of complexity"?*
 
 The final solution should still leverage vWAN (for its embedded transit capabilities) but should as well ideally remove the complexity of the custom route tables management.
 
