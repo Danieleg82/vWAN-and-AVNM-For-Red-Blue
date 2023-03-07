@@ -91,7 +91,7 @@ Here it is:
 - BLUE spokes (connected to same or different HUBs, including cross-region) will start communicating directly, and bypassing the HUB's FW - if present
 - The traffic between RED and BLUE will be driven to FW, since no better route exists for such. It will be the Central FW deciding if to ALLOW or to BLOCK traffic
 
-And what if I had no FW in my vHUBs?
+And what if I had no FW in my vHUBs*?
 Is there a way to still block the traffic from RED to BLUE?
 
 In such case, you could leverage again the concept of **SECURITY ADMIN RULES** offered by AVNM.
@@ -103,6 +103,8 @@ The link provided above gives you clear info about what these are, but to make i
 With this feature, you could potentally easily prevent traffic from REDs to BLUEs by creating the relevant security rules for blocking traffic to cross-scopes.
 
 Those rules would be automatically applied to all the VNETs in your group, and will have higher-priority compared with any NSG deployed in the VNETs.
+
+'*' *Note: at present day, the vWAN InterHUB traffic via Firewall is a feature [RoutingIntent] which is not GA yet*
 
 ## Can this solution offer exactly the same as Custom Route Tables approach?
 
