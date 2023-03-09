@@ -19,7 +19,7 @@ Let's now say that our connectivity goal is the following:
 
 - RED spokes must be able to communicate to other RED spokes linked to the same, or different, vHUBs, and **the communication must bypass any central Firewall**
 - BLUE spokes must be able to communicate to other BLUE spokes linked to the same, or different, vHUBs, **the communication must bypass any central Firewall**
-- The communication between REDs and BLUEs must be blocked
+- The communication between REDs and BLUEs must be filtered
 
 Several public articles from official MS documentation and from my great colleagues covered the topic already, in a wide range of all the possible relevant flavours: 
 
