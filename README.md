@@ -112,7 +112,7 @@ No, with vWAN's custom route tables you could manage to isolate the RED/BLUE gro
 
 So we can look at the AVNM-based use case mainly as to a facilitation in bypassing centralized FWs without the need of route tables' configuration or direct manually-built peerings between spokes of the same group.
 
-The possibility to leverage the *Security Admin Rules* - despite being conceptually different by network segregation - still offers the possibility to leverage this option as well for scenarios without centralized FW solutions.
+The possibility to leverage the *Security Admin Rules* still offers the possibility to leverage this option as well for scenarios without centralized FW solutions.
 
 In a next article, I'll show you how to use AVNM to achieve a similar connectivity pattern!
 
