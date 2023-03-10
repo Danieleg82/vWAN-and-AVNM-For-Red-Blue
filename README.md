@@ -49,7 +49,7 @@ And this is when I thought at something which could potentially help...**Azure V
 
 With Virtual Network Manager, you can define network groups to identify and logically segment your virtual networks. Then you can determine the connectivity and security configurations you want and apply them across all the selected virtual networks in network groups at once.
 
-This article is not meant to be an AVNM tutorial, but you can find here some excellent intro material to better understand the product (which today - March 2023 - is in Preview phase).
+This article is not meant to be an AVNM tutorial, but you can find here some excellent intro material to better understand the product (<ins>which today - March 2023 - is in Preview phase</ins>).
 
 **WHAT IS?**
 https://learn.microsoft.com/en-us/azure/virtual-network-manager/overview
